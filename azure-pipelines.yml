@@ -2,7 +2,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript?view=vsts
 pool:
   vmImage: 'Ubuntu 16.04'
-  
+
+pr:
+- master
+- releases/*
+
 steps:
 - task: NodeTool@0
   inputs:
