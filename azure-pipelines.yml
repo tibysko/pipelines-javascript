@@ -7,6 +7,8 @@ pr:
 - master
 - releases/*
 
+trigger: master
+
 steps:
 - task: NodeTool@0
   inputs:
